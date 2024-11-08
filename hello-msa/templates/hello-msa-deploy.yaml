@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: msa-frontend-deploy
+  namespace: default
   labels:
     app: msa-frontend
 spec:
@@ -31,6 +32,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: msa-usersrv-deploy
+  namespace: default
   labels:
     app: msa-usersrv
 spec:
